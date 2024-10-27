@@ -24,22 +24,44 @@
         </a>
     </section>
     
-    
-
     <section id="screenshots">
         <h2>Imagens do Aplicativo</h2>
         <div class="screenshots-container">
-            <img src="./assets/splash.jpg" alt="Tela inicial do aplicativo LINGUAGEANDO" />
-            <img src="./assets/home.jpg" alt="Tela principal do aplicativo LINGUAGEANDO" />
+            <img src="./assets/splash.jpg" alt="Tela inicial do aplicativo LINGUAGEANDO" class="screenshot" />
+            <img src="./assets/home.jpg" alt="Tela principal do aplicativo LINGUAGEANDO" class="screenshot" />
         </div>
     </section>
 
     <footer>
         <p>Contato: <a href="mailto:Evilson.santos@ifma.edu.br">Evilson.santos@ifma.edu.br</a></p>
         <p>&copy; 2024 LINGUAGEANDO</p>
-        <!-- Adicione links para redes sociais ou outras informações, se necessário -->
     </footer>
 
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" />
+        <div id="caption"></div>
+    </div>
+
     <script src="java.js"></script>
+    <script>
+        // JavaScript para abrir o modal
+        const images = document.querySelectorAll('.screenshot');
+        const modal = document.getElementById('modal');
+        const modalImg = document.getElementById('modalImg');
+        const captionText = document.getElementById('caption');
+
+        images.forEach(img => {
+            img.onclick = function() {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        });
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>

@@ -13,6 +13,39 @@ body {
     flex-direction: column;
     align-items: center;
 }
+/* Estilo para o modal */
+/* Estilo para o modal */
+.modal {
+    display: none; /* Oculto por padrão */
+    position: fixed; /* Fixa na tela */
+    z-index: 1000; /* Acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilita rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com transparência */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%; /* Máximo de 80% da largura da tela */
+    max-height: 80%; /* Máximo de 80% da altura da tela */
+    margin-top: 50px; /* Ajuste esse valor conforme necessário */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 
 header {
     text-align: center;
