@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #e8f5e9; /* Verde claro */
     color: #333;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #4CAF50;
+    background-color: #388e3c; /* Verde escuro */
     color: #fff;
     width: 100%;
 }
@@ -36,7 +36,7 @@ header h1 {
     display: inline-block;
     padding: 15px 30px;
     font-size: 1.2rem;
-    background-color: #4CAF50;
+    background-color: #8bc34a; /* Verde */
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -45,7 +45,7 @@ header h1 {
 }
 
 .download-btn:hover {
-    background-color: #45a049;
+    background-color: #7cb342; /* Verde mais escuro */
 }
 
 .ios-info {
@@ -70,13 +70,13 @@ header h1 {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #388e3c; /* Verde escuro */
     color: #fff;
     width: 100%;
 }
 
 footer a {
-    color: #4CAF50;
+    color: #8bc34a; /* Verde */
     text-decoration: none;
 }
 
